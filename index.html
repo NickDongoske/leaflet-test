@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Leaflet Map</title>
+    <meta charset="utf-8" />
+    <link 
+        rel="stylesheet" 
+        href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    />
+    <link 
+        rel="stylesheet"
+        href="style.css"
+    />
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body, #map {
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script
+        src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js">
+    </script>
+
+    <script>
+  //       var map = L.map('map').setView([0, 0], 1);
+  //       mapLink = 
+  //           '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+  //       L.tileLayer(
+  //           'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=AmzwTmJOo3SPEWU52EEz', {
+  //           attribution: 'Map data &copy; ' + mapLink,
+  //           maxZoom: 18,
+  //           minZoom: 3,
+  //           }).addTo(map);
+  //           var cannabisLeaf = L.icon({
+  //             iconUrl: 'https://pluspng.com/img-png/weed-png-hd-weed-20symbol-20png-2000.png',
+  //             iconSize: [38, 69],
+  //             iconAnchor: [22, 69]
+  //           })
+  //           var rastaLeaf = L.icon({
+  //             iconUrl: 'https://clipartmag.com/images/cannabis-clipart-35.jpg',
+  //             iconSize: [38, 69],
+  //             iconAnchor: [22, 69]
+
+  //           })
+
+  //          var locations = [
+  //                        ["London",51.5, -0.09, {icon: cannabisLeaf, title: 'London'}], 
+  //                        ['sinai', 29.987049, 34.268709, {icon: cannabisLeaf, title: 'Sinai'}],          
+  //                        ['Hindu kush', 36.929809, 73.168140, {icon: cannabisLeaf, title: 'Hindu Kush'}],
+  //                        ['Pakistani Chitral Kush', 35.768642, 71.768386, {icon: cannabisLeaf, title: 'Pakistani Chitral Kush'}],
+  //                        ['Durban Poison',-29.903993, 30.941933, {icon: cannabisLeaf, title: 'Durban Poison'}],
+  //                        ['Lambs Bread',18.227144, -77.229209, {icon: rastaLeaf, title: 'Lambs Bread'}],
+  //                        ['Colombian Gold',11.171647, -73.992430, {icon: cannabisLeaf, title: 'Colombian Gold'}],
+  //                        ['Acapulco Gold',16.889946, -99.877963, {icon: cannabisLeaf, title: 'Acapulco Gold'}],
+  //                        ['Panama Red',9.248704, -79.389782, {icon: cannabisLeaf, title: 'Panama Red'}],
+  //                        ['Aceh',3.656435, 97.472311, {icon: cannabisLeaf, title: 'Aceh'}],
+  //                        ['Thai',14.409035, 101.458692, {icon: cannabisLeaf, title: 'Thai'}],
+  //                        ['Malawi',-13.754058, 34.444188, {icon: cannabisLeaf, title: 'Malawi'}],
+  //                        ['Ketama',35.178002, -5.262269, {icon: cannabisLeaf, title: 'Ketama'}],
+  //                        ['Brazil Amazonia',-26.357113, -49.965492, {icon: cannabisLeaf, title: 'Brazil Amazonia'}],
+  //                        ['Malana Cream',32.063101, 77.263783, {icon: cannabisLeaf, title: 'Malana Cream'}],
+  //                        ['Orissa',21.001256, 85.849180, {icon: cannabisLeaf, title: 'Orissa'}]
+  //                        ];
+  //         for (var i = 0; i < locations.length; i++) {
+  //         marker = new L.marker([locations[i][1], locations[i][2]], locations[i][3])
+  //           .bindPopup(locations[i][0])
+  //           .addTo(map);
+  // }
+
+
+          
+
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+<!-- L.marker([51.5, -0.09], {icon: cannabisLeaf, title: 'London'}).addTo(map), 
+L.marker([29.987049, 34.268709], {icon: cannabisLeaf, title: 'Sinai'}).addTo(map),          
+L.marker([36.929809, 73.168140], {icon: cannabisLeaf, title: 'Hindu Kush'}).addTo(map),
+L.marker([35.768642, 71.768386], {icon: cannabisLeaf, title: 'Pakistani Chitral Kush'}).addTo(map),
+L.marker([-29.903993, 30.941933], {icon: cannabisLeaf, title: 'Durban Poison'}).addTo(map),
+L.marker([18.227144, -77.229209], {icon: rastaLeaf, title: 'Lambs Bread'}).addTo(map),
+L.marker([11.171647, -73.992430], {icon: cannabisLeaf, title: 'Colombian Gold'}).addTo(map),
+L.marker([16.889946, -99.877963], {icon: cannabisLeaf, title: 'Acapulco Gold'}).addTo(map),
+L.marker([9.248704, -79.389782], {icon: cannabisLeaf, title: 'Panama Red'}).addTo(map),
+L.marker([3.656435, 97.472311], {icon: cannabisLeaf, title: 'Aceh'}).addTo(map),
+L.marker([14.409035, 101.458692], {icon: cannabisLeaf, title: 'Thai'}).addTo(map),
+L.marker([-13.754058, 34.444188], {icon: cannabisLeaf, title: 'Malawi'}).addTo(map),
+L.marker([35.178002, -5.262269], {icon: cannabisLeaf, title: 'Ketama'}).addTo(map),
+L.marker([-26.357113, -49.965492], {icon: cannabisLeaf, title: 'Brazil Amazonia'}).addTo(map),
+L.marker([32.063101, 77.263783], {icon: cannabisLeaf, title: 'Malana Cream'}).addTo(map),
+L.marker([21.001256, 85.849180], {icon: cannabisLeaf, title: 'Orissa'}).addTo(map) -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <style>
+    #map {position: absolute; top: 0; bottom: 0; left: 0; right: 0;}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id='map'></div>
+  <script>
+    var map = L.map('map').setView([0, 0], 1);
+    L.tileLayer('https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=AmzwTmJOo3SPEWU52EEz', {
+      noWrap: true,
+      attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+
+    }).addTo(map);
+  </script>
+</body>
+</html> -->

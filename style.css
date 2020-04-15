@@ -1,0 +1,23 @@
+/* #script {
+  background-size: cover;
+} */
+.leaflet-popup {left: 30px !important;}
+/* Here I move the "tip" to the right location, but didn't succeed in making it visible. So I just remove the box-shadow and leave it: */
+.leaflet-popup-tip-container {
+   left: -11px !important;
+   top: 12px;
+   transform: rotate(90deg);
+   margin-bottom: 100px;
+}
+.leaflet-popup-tip {
+   box-shadow: none !important;
+}
+.leaflet-popup:before 
+    {
+    content: "";
+    position: absolute;
+    border: 13px solid transparent;
+    border-bottom-color: white;
+    bottom: 0px;
+    margin-left: -13px;
+}
