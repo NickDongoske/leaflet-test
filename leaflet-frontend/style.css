@@ -5,19 +5,24 @@
 /* Here I move the "tip" to the right location, but didn't succeed in making it visible. So I just remove the box-shadow and leave it: */
 .leaflet-popup-tip-container {
    left: -11px !important;
-   top: 12px;
+   top: 62px;
    transform: rotate(90deg);
-   margin-bottom: 100px;
+   margin-bottom: 10px;
+   color: papayawhip;
 }
 .leaflet-popup-tip {
    box-shadow: none !important;
+   background: papayawhip;
 }
 .leaflet-popup:before 
     {
     content: "";
     position: absolute;
     border: 13px solid transparent;
-    border-bottom-color: white;
     bottom: 0px;
     margin-left: -13px;
+}
+ .leaflet-popup-content-wrapper {
+   background: papayawhip;
+   color: darkblue;
 }
